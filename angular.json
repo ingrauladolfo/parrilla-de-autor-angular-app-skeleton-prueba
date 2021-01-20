@@ -25,12 +25,28 @@
             "aot": true,
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/solid.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/regular.scss",
+              "node_modules/@fortawesome/fontawesome-free/scss/brands.scss",
+              "node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
+              "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
+              "node_modules/animate.css/animate.css",
+              "./node_modules/uikit/dist/css/uikit.min.css",
+              "./node_modules/uikit/dist/css/uikit-core.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js",
+              "./node_modules/uikit/dist/js/uikit.min.js",
+              "./node_modules/uikit/dist/js/uikit-icons.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -58,7 +74,9 @@
                   "maximumWarning": "2kb",
                   "maximumError": "4kb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "ngsw-config.json"
             }
           }
         },
@@ -88,9 +106,11 @@
             "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/manifest.webmanifest"
             ],
             "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -124,5 +144,8 @@
       }
     }
   },
-  "defaultProject": "parrilla-de-autor-angular-app-skeleton-prueba"
+  "defaultProject": "parrilla-de-autor-angular-app-skeleton-prueba",
+  "cli": {
+    "analytics": "cfb97ecc-dbee-477f-8061-8c47a3ab7c44"
+  }
 }
